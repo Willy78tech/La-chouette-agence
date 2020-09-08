@@ -13,17 +13,26 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery-2.1.0.js" async></script>
+	<script src="./js/bootstrap.js" async></script>
+	<script src="./js/blocs.js" async></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	<script src="./js/gmaps.js" async></script>
 
     <title>La chouette agence - Agence Web basée à Lyon</title>
 
     
 <!-- Analytics -->
- 
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176652334-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176652334-1');
+</script>
+
 <!-- Analytics END -->
     
 </head>
@@ -69,7 +78,7 @@
 					La chouette agence
 				</h1>
 				<div class="text-center">
-					<a href="#bloc-6-contact" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contactez-nous</a>
+					<a href="#bloc-6-contact" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -147,7 +156,7 @@
 					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
 				</p>
 				<div class="text-center">
-					<a href="#bloc-6-contact" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contactez-nous</a>
+					<a href="#bloc-6-contact" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -187,7 +196,7 @@
 		</section>
 		<section class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="photo prise de haut de plusieurs accéssoires photographiques allignés sur une table noire"/></a>
+				<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="photo prise de haut de plusieurs accéssoires photographiques allignés sur une table noire"/></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -196,7 +205,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="photo prise de haut d'un bureau avec un ordinateur et une tablette et des plans de mariages " /></a>
+				<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="photo prise de haut d'un bureau avec un ordinateur et une tablette et des plans de mariages " /></a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -217,7 +226,7 @@
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="#bloc-6-contact" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contactez-nous</a>
+				<a href="#bloc-6-contact" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 			</div>
 		</section>
 	</div>
@@ -251,20 +260,20 @@
 					<div class="form-group">
 						<label>
 							Nom
+							<input id="name" class="form-control" required />
 						</label>
-						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
+							<input id="email" class="form-control" type="email" required />
 						</label>
-						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
+							<input class="form-control" type="email" required id="input_504" />
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
 						<label>
